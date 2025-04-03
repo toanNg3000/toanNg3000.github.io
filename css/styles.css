@@ -1,0 +1,211 @@
+:root {
+    --primary: #00f0ff;
+    --secondary: #ff00f0;
+    --dark: #0a0a0f;
+    --light: #f0f0f0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark);
+    color: var(--light);
+    overflow-x: hidden;
+}
+
+body.light-mode {
+    background-color: #f5f5f5;
+    color: #333;
+    --primary: #0077ff;
+    --secondary: #ff5500;
+    --dark: #f5f5f5;
+    --light: #333;
+}
+
+.neon-text {
+    text-shadow: 0 0 5px var(--primary), 0 0 10px var(--primary), 0 0 20px var(--primary);
+}
+
+.light-mode .neon-text {
+    text-shadow: none;
+    color: var(--primary);
+}
+
+.neon-border {
+    box-shadow: 0 0 5px var(--primary), 0 0 10px var(--primary), inset 0 0 5px var(--primary);
+}
+
+.light-mode .neon-border {
+    box-shadow: 0 0 0 1px var(--primary);
+}
+
+.neon-hover:hover {
+    text-shadow: 0 0 5px var(--secondary), 0 0 10px var(--secondary);
+    transition: all 0.3s ease;
+}
+
+.light-mode .neon-hover:hover {
+    text-shadow: none;
+    color: var(--secondary);
+}
+
+.glow {
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 5px var(--primary), 0 0 10px var(--primary);
+    }
+    to {
+        box-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary), 0 0 30px var(--primary);
+    }
+}
+
+.light-mode .glow {
+    animation: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+    border: 2px solid var(--primary);
+    box-shadow: 0 0 20px var(--primary), inset 0 0 10px var(--primary);
+}
+
+.light-mode .avatar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-bar {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    height: 8px;
+    border-radius: 4px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    left: -10px;
+    top: 0;
+    box-shadow: 0 0 10px var(--primary);
+}
+
+.light-mode .timeline-item::before {
+    box-shadow: none;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 240, 255, 0.3);
+}
+
+.light-mode .project-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 119, 255, 0.2);
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.terminal-cursor {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background-color: var(--primary);
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Language switch styles */
+.language-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.language-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.language-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.language-slider:before {
+    position: absolute;
+    content: "VI";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+input:checked + .language-slider {
+    background-color: #2196F3;
+}
+
+input:checked + .language-slider:before {
+    content: "EN";
+    transform: translateX(30px);
+}
+
+.language-toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between elements */
+}
+
+.flag-icon {
+    width: 40px; /* Ensure consistent size */
+    height: auto;
+}
+
+.language-switch {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
