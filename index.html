@@ -397,112 +397,222 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="py-20 bg-black bg-opacity-50">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center neon-text">
+        <section id="skills" class="py-20 bg-black bg-opacity-50 overflow-hidden">
+            <div class="container mx-auto px-6 relative">
+                <!-- Animated Background -->
+                <div class="absolute inset-0 overflow-hidden">
+                    <div class="grid-lines"></div>
+                </div>
+        
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center neon-text glitch" data-text="Technical Skills">
                     <span class="border-b-2 border-cyan-400 pb-2 i18n" data-vi="Kỹ năng chuyên môn" data-en="Technical Skills">Kỹ năng chuyên môn</span>
                 </h2>
-                <p class="text-center text-gray-400 mb-16 max-w-2xl mx-auto i18n" 
-                   data-vi="Các công nghệ và kỹ năng tôi thành thạo trong lĩnh vực Trí tuệ Nhân tạo và Khoa học Dữ liệu."
-                   data-en="Technologies and skills I'm proficient in within Artificial Intelligence and Data Science.">
+                
+                <p class="text-center text-gray-400 mb-16 max-w-2xl mx-auto i18n whitespace-nowrap"
+                    data-vi="Các công nghệ và kỹ năng tôi thành thạo trong lĩnh vực Trí tuệ Nhân tạo và Khoa học Dữ liệu."
+                    data-en="Technologies and skills I'm proficient in within Artificial Intelligence and Data Science.">
                     Các công nghệ và kỹ năng tôi thành thạo trong lĩnh vực Trí tuệ Nhân tạo và Khoa học Dữ liệu.
                 </p>
+            
+                <div class="container skill-container">
+                    <!-- Deep Learning -->
+                    <div class="card skill-card" data-aos="zoom-in" data-aos-delay="100">
+                      <div class="card-content cyberpunk-panel">
+                        <h4 class="skill-heading i18n" data-vi="Học sâu" data-en="Deep Learning">Deep Learning</h4>
+                        <div class="row text-center skill-icons">
+                          <div class="col s4 m2 skill-icon">
+                            <div class="skill-icon-wrapper">
+                              <img alt="" src="assets/images/ycomm_vietnam_logo.jpg" class="responsive-img">
+                              <span class="skill-name">CNN</span>
+                            </div>
+                          </div>
+                          <div class="col s4 m2 skill-icon">
+                            <div class="skill-icon-wrapper">
+                              <img alt="" src="assets/images/ycomm_vietnam_logo.jpg" class="responsive-img">
+                              <span class="skill-name">YOLO</span>
+                            </div>
+                          </div>
+                          <div class="col s4 m2 skill-icon">
+                            <div class="skill-icon-wrapper">
+                              <img alt="" src="assets/images/ycomm_vietnam_logo.jpg" class="responsive-img">
+                              <span class="skill-name">ViT</span>
+                            </div>
+                          </div>
+                          <div class="col s4 m2 skill-icon">
+                            <div class="skill-icon-wrapper">
+                              <img alt="" src="assets/images/ycomm_vietnam_logo.jpg" class="responsive-img">
+                              <span class="skill-name">OCR (OpenCV, Tesseract)</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <div>
-                        <h3 class="text-xl font-bold mb-6 text-cyan-400 i18n" data-vi="Công nghệ AI/ML" data-en="AI/ML Technologies">Công nghệ AI/ML</h3>
-                        
-                        <div class="space-y-6">
-                            <div>
-                                <div class="flex justify-between mb-2">
-                                    <span class="font-medium">Python</span>
-                                    <span class="text-cyan-400">95%</span>
-                                </div>
-                                <div class="w-full bg-gray-800 rounded-full h-2">
-                                    <div class="skill-bar rounded-full h-2" style="width: 95%"></div>
-                                </div>
+                    <!-- ML Libraries -->
+                    <div class="card skill-card" data-aos="zoom-in" data-aos-delay="200">
+                      <div class="card-content cyberpunk-panel">
+                        <h4 class="skill-heading i18n" data-vi="Các Framework máy học & Thư viện" data-en="ML Frameworks & Libraries">ML Frameworks & Libraries</h4>
+                        <div class="row text-center skill-icons">
+                          <div class="col s4 m2 skill-icon">
+                            <div class="skill-icon-wrapper">
+                              <img alt="" src="/assets/img/pytorch-logo.png" class="responsive-img">
+                              <span class="skill-name">PyTorch</span>
                             </div>
-                            
-                            <div>
-                                <div class="flex justify-between mb-2">
-                                    <span class="font-medium">TensorFlow/PyTorch</span>
-                                    <span class="text-cyan-400">90%</span>
-                                </div>
-                                <div class="w-full bg-gray-800 rounded-full h-2">
-                                    <div class="skill-bar rounded-full h-2" style="width: 90%"></div>
-                                </div>
+                          </div>
+                          <div class="col s4 m2 skill-icon">
+                            <div class="skill-icon-wrapper">
+                              <img alt="" src="/assets/img/tensorflow-logo-1.png" class="responsive-img">
+                              <span class="skill-name">TensorFlow</span>
                             </div>
-                            
-                            <div>
-                                <div class="flex justify-between mb-2">
-                                    <span class="font-medium i18n" data-vi="Xử lý ngôn ngữ tự nhiên" data-en="Natural Language Processing">Xử lý ngôn ngữ tự nhiên</span>
-                                    <span class="text-cyan-400">85%</span>
-                                </div>
-                                <div class="w-full bg-gray-800 rounded-full h-2">
-                                    <div class="skill-bar rounded-full h-2" style="width: 85%"></div>
-                                </div>
+                          </div>
+                          <div class="col s4 m2 skill-icon">
+                            <div class="skill-icon-wrapper">
+                              <img alt="" src="/assets/img/keras-logo.png" class="responsive-img">
+                              <span class="skill-name">Keras</span>
                             </div>
-                            
-                            <div>
-                                <div class="flex justify-between mb-2">
-                                    <span class="font-medium i18n" data-vi="Thị giác máy tính" data-en="Computer Vision">Thị giác máy tính</span>
-                                    <span class="text-cyan-400">88%</span>
-                                </div>
-                                <div class="w-full bg-gray-800 rounded-full h-2">
-                                    <div class="skill-bar rounded-full h-2" style="width: 88%"></div>
-                                </div>
+                          </div>
+                          <div class="col s4 m2 skill-icon">
+                            <div class="skill-icon-wrapper">
+                              <img alt="" src="/assets/img/numpy-logo-1-500x500.jpg" class="responsive-img">
+                              <span class="skill-name">NumPy</span>
                             </div>
+                          </div>
+                          <div class="col s4 m2 skill-icon">
+                            <div class="skill-icon-wrapper">
+                              <img alt="" src="/assets/img/sk-learn-logo-1-500x500.jpg" class="responsive-img">
+                              <span class="skill-name">scikit-learn</span>
+                            </div>
+                          </div>
+                          <div class="col s4 m2 skill-icon">
+                            <div class="skill-icon-wrapper">
+                              <img alt="" src="/assets/img/pandas-logo-2-500x500.jpg" class="responsive-img">
+                              <span class="skill-name">Pandas</span>
+                            </div>
+                          </div>
                         </div>
+                      </div>
                     </div>
-                    
-                    <div>
-                        <h3 class="text-xl font-bold mb-6 text-purple-400 i18n" data-vi="Công nghệ khác" data-en="Other Technologies">Công nghệ khác</h3>
-                        
-                        <div class="space-y-6">
-                            <div>
-                                <div class="flex justify-between mb-2">
-                                    <span class="font-medium">Docker/Kubernetes</span>
-                                    <span class="text-purple-400">80%</span>
-                                </div>
-                                <div class="w-full bg-gray-800 rounded-full h-2">
-                                    <div class="skill-bar rounded-full h-2" style="width: 80%"></div>
-                                </div>
+                
+                    <!-- LLMs -->
+                    <div class="card skill-card" data-aos="zoom-in" data-aos-delay="300">
+                      <div class="card-content cyberpunk-panel">
+                        <h4 class="skill-heading">LLMs & Generative Models</h4>
+                        <div class="row text-center skill-icons">
+                          <div class="col s4 m2 skill-icon">
+                            <div class="skill-icon-wrapper">
+                              <img alt="" src="/assets/img/chatgpt.png" class="responsive-img">
+                              <span class="skill-name">ChatGPT</span>
                             </div>
-                            
-                            <div>
-                                <div class="flex justify-between mb-2">
-                                    <span class="font-medium">SQL/NoSQL</span>
-                                    <span class="text-purple-400">85%</span>
-                                </div>
-                                <div class="w-full bg-gray-800 rounded-full h-2">
-                                    <div class="skill-bar rounded-full h-2" style="width: 85%"></div>
-                                </div>
+                          </div>
+                          <div class="col s4 m2 skill-icon">
+                            <div class="skill-icon-wrapper">
+                              <img alt="" src="/assets/img/stable-diffusion.png" class="responsive-img">
+                              <span class="skill-name">Stable Diffusion</span>
                             </div>
-                            
-                            <div>
-                                <div class="flex justify-between mb-2">
-                                    <span class="font-medium i18n" data-vi="Điện toán đám mây (AWS/GCP)" data-en="Cloud (AWS/GCP)">Điện toán đám mây (AWS/GCP)</span>
-                                    <span class="text-purple-400">75%</span>
-                                </div>
-                                <div class="w-full bg-gray-800 rounded-full h-2">
-                                    <div class="skill-bar rounded-full h-2" style="width: 75%"></div>
-                                </div>
+                          </div>
+                          <div class="col s4 m2 skill-icon">
+                            <div class="skill-icon-wrapper">
+                              <img alt="" src="/assets/img/langchain.png" class="responsive-img">
+                              <span class="skill-name">LangChain</span>
                             </div>
-                            
-                            <div>
-                                <div class="flex justify-between mb-2">
-                                    <span class="font-medium">CI/CD</span>
-                                    <span class="text-purple-400">70%</span>
-                                </div>
-                                <div class="w-full bg-gray-800 rounded-full h-2">
-                                    <div class="skill-bar rounded-full h-2" style="width: 70%"></div>
-                                </div>
-                            </div>
+                          </div>
                         </div>
+                      </div>
                     </div>
+                
+                    <!-- Web/API -->
+                    <div class="card skill-card" data-aos="zoom-in" data-aos-delay="400">
+                      <div class="card-content cyberpunk-panel">
+                        <h4 class="skill-heading">Web & API</h4>
+                        <div class="row text-center skill-icons">
+                          <div class="col s4 m2 skill-icon">
+                            <div class="skill-icon-wrapper">
+                              <img alt="" src="/assets/img/flask-logo.png" class="responsive-img">
+                              <span class="skill-name">Flask</span>
+                            </div>
+                          </div>
+                          <div class="col s4 m2 skill-icon">
+                            <div class="skill-icon-wrapper">
+                              <img alt="" src="/assets/img/fastapi.png" class="responsive-img">
+                              <span class="skill-name">FastAPI</span>
+                            </div>
+                          </div>
+                          <div class="col s4 m2 skill-icon">
+                            <div class="skill-icon-wrapper">
+                              <img alt="" src="/assets/img/agile.png" class="responsive-img">
+                              <span class="skill-name">Agile Workflow</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <!-- Tools -->
+                    <div class="card skill-card" data-aos="zoom-in" data-aos-delay="500">
+                      <div class="card-content cyberpunk-panel">
+                        <h4 class="skill-heading">Tools & Platforms</h4>
+                        <div class="row text-center skill-icons">
+                          <div class="col s4 m2 skill-icon">
+                            <div class="skill-icon-wrapper">
+                              <img alt="" src="/assets/img/linux.png" class="responsive-img">
+                              <span class="skill-name">Linux</span>
+                            </div>
+                          </div>
+                          <div class="col s4 m2 skill-icon">
+                            <div class="skill-icon-wrapper">
+                              <img alt="" src="/assets/img/gpu.png" class="responsive-img">
+                              <span class="skill-name">GPU Server</span>
+                            </div>
+                          </div>
+                          <div class="col s4 m2 skill-icon">
+                            <div class="skill-icon-wrapper">
+                              <img alt="" src="/assets/img/jupyter.png" class="responsive-img">
+                              <span class="skill-name">Jupyter</span>
+                            </div>
+                          </div>
+                          <div class="col s4 m2 skill-icon">
+                            <div class="skill-icon-wrapper">
+                              <img alt="" src="/assets/img/git.png" class="responsive-img">
+                              <span class="skill-name">Git</span>
+                            </div>
+                          </div>
+                          <div class="col s4 m2 skill-icon">
+                            <div class="skill-icon-wrapper">
+                              <img alt="" src="/assets/img/docker.png" class="responsive-img">
+                              <span class="skill-name">Docker</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <!-- Cloud -->
+                    <div class="card skill-card" data-aos="zoom-in" data-aos-delay="600">
+                      <div class="card-content cyberpunk-panel">
+                        <h4 class="skill-heading">Cloud</h4>
+                        <div class="row text-center skill-icons">
+                          <div class="col s4 m2 skill-icon">
+                            <div class="skill-icon-wrapper">
+                              <img alt="" src="/assets/img/aws-lambda.png" class="responsive-img">
+                              <span class="skill-name">AWS Lambda</span>
+                            </div>
+                          </div>
+                          <div class="col s4 m2 skill-icon">
+                            <div class="skill-icon-wrapper">
+                              <img alt="" src="/assets/img/aws-ecr.png" class="responsive-img">
+                              <span class="skill-name">AWS ECR</span>
+                            </div>
+                          </div>
+                          <div class="col s4 m2 skill-icon">
+                            <div class="skill-icon-wrapper">
+                              <img alt="" src="/assets/img/aws-s3.png" class="responsive-img">
+                              <span class="skill-name">AWS S3</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                
                 </div>
-                
                 <!-- Certifications -->
                 <div class="mt-16">
                     <h3 class="text-xl font-bold mb-6 text-center text-cyan-400 i18n" data-vi="Chứng nhận" data-en="Certifications">Chứng nhận</h3>
@@ -541,7 +651,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
         <!-- Contact Section -->
@@ -556,97 +665,7 @@
                     Bạn có dự án AI cần triển khai? Hãy liên hệ để cùng hợp tác phát triển những giải pháp thông minh.
                 </p>
                 
-                <!-- <div class="flex flex-col md:flex-row gap-12">
-                    <div class="md:w-1/2">
-                        <form class="space-y-6">
-                            <div>
-                                <label for="name" class="block text-sm font-medium text-gray-300 mb-1 i18n" data-vi="Họ và tên" data-en="Full Name">Họ và tên</label>
-                                <input type="text" id="name" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent" placeholder="Nhập tên của bạn">
-                            </div>
-                            
-                            <div>
-                                <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
-                                <input type="email" id="email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent" placeholder="Nhập email của bạn">
-                            </div>
-                            
-                            <div>
-                                <label for="subject" class="block text-sm font-medium text-gray-300 mb-1 i18n" data-vi="Chủ đề" data-en="Subject">Chủ đề</label>
-                                <input type="text" id="subject" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent" placeholder="Nhập chủ đề">
-                            </div>
-                            
-                            <div>
-                                <label for="message" class="block text-sm font-medium text-gray-300 mb-1 i18n" data-vi="Nội dung" data-en="Message">Nội dung</label>
-                                <textarea id="message" rows="5" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent" placeholder="Nhập nội dung tin nhắn"></textarea>
-                            </div>
-                            
-                            <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg font-medium hover:opacity-90 transition shadow-lg glow i18n" data-vi="Gửi tin nhắn" data-en="Send Message">
-                                Gửi tin nhắn
-                            </button>
-                        </form>
-                    </div> -->
-                    
-                    <!-- <div class="md:w-1/1">
-                        <div class="bg-gray-900 p-8 rounded-xl neon-border">
-                            <h3 class="text-xl font-bold mb-6 text-cyan-400 i18n" data-vi="Thông tin liên hệ" data-en="Contact Information">Thông tin liên hệ</h3>
-                            
-                            <div class="space-y-6">
-                                <div class="flex items-start">
-                                    <div class="flex-shrink-0 text-cyan-400">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                        </svg>
-                                    </div>
-                                    <div class="ml-4">
-                                        <h4 class="text-lg font-medium i18n" data-vi="Điện thoại" data-en="Phone">Điện thoại</h4>
-                                        <p class="text-gray-300">(+84) 0364246081</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="flex items-start">
-                                    <div class="flex-shrink-0 text-cyan-400">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                        </svg>
-                                    </div>
-                                    <div class="ml-4">
-                                        <h4 class="text-lg font-medium">Email</h4>
-                                        <p class="text-gray-300">toannn20@gmail.com</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="flex items-start">
-                                    <div class="flex-shrink-0 text-cyan-400">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                        </svg>
-                                    </div>
-                                    <div class="ml-4">
-                                        <h4 class="text-lg font-medium i18n" data-vi="Địa chỉ" data-en="Address">Địa chỉ</h4>
-                                        <p class="text-gray-300 i18n" data-vi="Bình Chánh, TP.HCM, Việt Nam" data-en="Binh Chanh, Ho Chi Minh City Vietnam">Bình Chánh, TP.HCM, Việt Nam</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="mt-8">
-                                <h4 class="text-lg font-medium mb-4 text-cyan-400 i18n" data-vi="Mạng xã hội" data-en="Social Media">Mạng xã hội</h4>
-                                <div class="flex space-x-4">
-                                    <a href="https://github.com/toanNg3000" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-cyan-500 transition">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
-                                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                        </svg>
-                                    </a>
-                                    <a href="https://www.linkedin.com/in/toan-ng/" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-blue-500 transition">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
-                                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                            <rect x="2" y="9" width="4" height="12"></rect>
-                                            <circle cx="4" cy="4" r="2"></circle>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
+                
                     <section id="contact" class="section contact-wrapper">
                         <div id="particles-js2"></div>
                         <div class="container">
