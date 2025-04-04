@@ -209,3 +209,57 @@ input:checked + .language-slider:before {
     align-items: center;
     position: relative;
 }
+
+.contact-wrapper {
+    position: relative;
+    padding: 100px 0;
+    background-color: #212529;
+    overflow: hidden;
+}
+
+#particles-js2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.txt-bg {
+    position: relative;
+    z-index: 2;
+}
+
+.txt-bg-contact {
+    margin-bottom: 50px;
+}
+
+.text-custom {
+    color: #007bff;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.contact-links {
+    color: #f8f9fa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-links:hover {
+    color: #007bff;
+}
+
+.contact-card {
+    background: rgba(33, 37, 41, 0.8);
+    border-radius: 10px;
+    padding: 30px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}

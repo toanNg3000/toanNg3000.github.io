@@ -7,6 +7,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Particles.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="min-h-screen">
@@ -546,7 +556,7 @@
                     Bạn có dự án AI cần triển khai? Hãy liên hệ để cùng hợp tác phát triển những giải pháp thông minh.
                 </p>
                 
-                <div class="flex flex-col md:flex-row gap-12">
+                <!-- <div class="flex flex-col md:flex-row gap-12">
                     <div class="md:w-1/2">
                         <form class="space-y-6">
                             <div>
@@ -573,9 +583,9 @@
                                 Gửi tin nhắn
                             </button>
                         </form>
-                    </div>
+                    </div> -->
                     
-                    <div class="md:w-1/2">
+                    <!-- <div class="md:w-1/1">
                         <div class="bg-gray-900 p-8 rounded-xl neon-border">
                             <h3 class="text-xl font-bold mb-6 text-cyan-400 i18n" data-vi="Thông tin liên hệ" data-en="Contact Information">Thông tin liên hệ</h3>
                             
@@ -636,7 +646,38 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+                    <section id="contact" class="section contact-wrapper">
+                        <div id="particles-js2"></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-3 col-md-4 mt-4 pointer pt-2 animate__animated animate__slideInLeft">
+                                    <div class="text-center contact-card">
+                                        <i class="fa-solid fa-location-dot h3 mb-4 text-custom"></i>
+                                        <h3 class="font-weight-normal line-height-normal mb-0">
+                                            <a rel="noreferrer" aria-label="contact(opens in a new tab)" target="_blank" class="contact-links i18n" href="https://maps.google.com/?q=Bình Chánh, TP.HCM, Việt Nam" data-vi="Bình Chánh, TP.HCM, Việt Nam" data-en="Binh Chanh, Ho Chi Minh City Vietnam">Bình Chánh, TP.HCM, Việt Nam</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 mt-4 pointer pt-2 animate__animated animate__slideInUp">
+                                    <div class="text-center contact-card">
+                                        <i class="fas fa-mobile-alt h3 mb-4 text-custom"></i>
+                                        <h3 class="font-weight-normal line-height-normal mb-1">
+                                            <a rel="noreferrer" aria-label="contact(opens in a new tab)" target="_blank" class="contact-links" href="tel:+84-0364246081">+84-0364246081</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 mt-4 pointer pt-2 animate__animated animate__slideInRight">
+                                    <div class="text-center contact-card">
+                                        <i class="far fa-envelope h3 mb-4 text-custom"></i>
+                                        <h3 class="font-weight-normal line-height-normal mb-0">
+                                            <a rel="noreferrer" aria-label="contact(opens in a new tab)" target="_blank" class="contact-links" href="mailto:toannn20@gmail.com">toannn20@gmail.com</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </section>
