@@ -406,3 +406,15 @@ document.addEventListener('DOMContentLoaded', function() {
         "retina_detect": true
     });
 });
+
+const container = document.querySelector(".group");
+const afterImage = document.getElementById("afterImage");
+const sliderHandle = document.getElementById("sliderHandle");
+
+container.addEventListener("mousemove", (e) => {
+const rect = container.getBoundingClientRect();
+const x = e.clientX - rect.left;
+const percentage = (x / rect.width) * 100;
+afterImage.style.clipPath = `polygon(${percentage}% 0, 100% 0, 100% 100%, ${percentage}% 100%)`;
+sliderHandle.style.left = `${percentage}%`;
+});
