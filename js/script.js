@@ -12,10 +12,10 @@ window.addEventListener('load', function() {
                 loading.style.display = 'none';
             }, 500);
         } else {
-            width += 33.33; // Increase the width by 33.33% every 200ms
+            width += 25; // Increase the width by 33.33% every 200ms
             loadingBar.style.width = width + '%';
         }
-    }, 200);
+    }, 100);
 });
 
 // Typewriter effect
